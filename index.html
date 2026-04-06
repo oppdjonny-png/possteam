@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Viewport Meta Tags for All Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport-fit" content="cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Jann POS" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- iPhone X / XS / 11 Pro Notch Support -->
+    <meta name="viewport-fit" content="cover" />
+    
+    <!-- Android Device Optimization -->
+    <meta name="theme-color" content="#0D1844" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    
+    <!-- Description and Keywords -->
+    <meta name="description" content="Jann Investment - Enterprise Supermarket Management System. Multi-branch POS, inventory management, real-time analytics, and staff management. Works on handheld Android POS, dual-screen supermarket displays, iPhone, iPad, and desktop." />
+    <meta name="keywords" content="POS System, Retail Management, Supermarket, Inventory Management, Sales Analytics, Android POS, Dual-Screen, Payment Processing" />
+    <meta name="author" content="Jann Investment Ltd" />
+    
+    <!-- Safe Area Variables for Notches and Cutouts -->
+    <meta name="safe-area-inset-top" content="0" />
+    <meta name="safe-area-inset-right" content="0" />
+    <meta name="safe-area-inset-bottom" content="0" />
+    <meta name="safe-area-inset-left" content="0" />
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/jann-logo.jpeg" />
+    <link rel="apple-touch-icon" href="./assets/jann-logo.jpeg" />
+    
+    <title>Jann Investment | Enterprise Retail Management System</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+      
+      * { 
+        box-sizing: border-box; 
+      }
+      
+      html { 
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      body { 
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: #F4F6FB;
+        color: #1F2937;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      #root { 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      
+      /* Device-specific optimizations */
+      
+      /* Prevent zoom on input focus for iOS */
+      
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      select,
+      textarea {
+        font-size: 16px; /* Prevents auto-zoom on iOS */
+        -webkit-user-select: text;
+        user-select: text;
+      }
+      
+      /* Improve touch targets on mobile */
+      
+      @media (max-width: 600px) {
+        button, a[role="button"], input, select, textarea {
+          min-height: 48px;
+          min-width: 48px;
+        }
+      }
+      
+      /* Smooth scrolling on all devices */
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* iOS momentum scrolling (vendor prefix for older Safari) */
+      
+      body, [data-scrollable] {
+        /* Use standard scroll-behavior instead */
+        scroll-behavior: auto;
+      }
+      
+      /* Disable tap highlight on mobile */
+      
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Typography improvements */
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      
+      button, input, select, textarea {
+        font-family: inherit;
+      }
+      
+      input::placeholder, textarea::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      
+      /* Dual-screen support (viewport spanning) */
+      
+      @supports (viewport-segments: 2) {
+        @media (vertical-viewport-segments: 2) {
+          body {
+            --screen-spanning: vertical;
+            --hinge-position: calc(100vw / 2);
+          }
+        }
+
+        @media (horizontal-viewport-segments: 2) {
+          body {
+            --screen-spanning: horizontal;
+            --hinge-position: calc(100vh / 2);
+          }
+        }
+      }
+      
+      /* Safe area support (notches) */
+      
+      @supports (padding: max(0px)) {
+        body {
+          padding-top: max(0px, env(safe-area-inset-top));
+          padding-right: max(0px, env(safe-area-inset-right));
+          padding-bottom: max(0px, env(safe-area-inset-bottom));
+          padding-left: max(0px, env(safe-area-inset-left));
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CZvKZmfs.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/router-vendor-DT51W8iF.js">
+    <link rel="modulepreload" crossorigin href="./assets/framer-vendor-9QCWlWa3.js">
+    <link rel="modulepreload" crossorigin href="./assets/ui-vendor-B23nKZWP.js">
+    <link rel="modulepreload" crossorigin href="./assets/chart-vendor-Dc_eE2gT.js">
+    <link rel="modulepreload" crossorigin href="./assets/pdf-vendor-BzG8Isl4.js">
+    <link rel="modulepreload" crossorigin href="./assets/data-vendor-Brk6AFyJ.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-DNqqGVeh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

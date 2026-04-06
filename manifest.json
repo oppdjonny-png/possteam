@@ -1,0 +1,22 @@
+{
+  "name": "Jann Investment POS",
+  "short_name": "Jann POS",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D1844",
+  "description": "Jann Investment — Point of Sale and Inventory Management",
+  "icons": [
+    {
+      "src": "/jann-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/jann-logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
